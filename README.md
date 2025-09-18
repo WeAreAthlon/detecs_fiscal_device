@@ -30,7 +30,6 @@ Add the package to your `pubspec.yaml`:
 dependencies:
   datecs_fiscal: ^0.1.0
 ```
-```
 
 Then install:
 
