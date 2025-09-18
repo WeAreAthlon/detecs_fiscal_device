@@ -1,7 +1,7 @@
 name: datecs_fiscal_device
 description: "Datecs fiscal device communication plugin."
 version: 0.1.0
-homepage:
+homepage: "https://github.com/WeAreAthlon/datecs_fiscal_device"
 
 environment:
   sdk: ^3.8.1
