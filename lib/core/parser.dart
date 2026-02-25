@@ -5,7 +5,7 @@ import 'package:datecs_fiscal_device/core/exceptions.dart';
 import 'package:datecs_fiscal_device/core/message.dart';
 import 'package:datecs_fiscal_device/core/status.dart';
 import 'package:datecs_fiscal_device/utils/compute_checksum.dart';
-import 'package:datecs_fiscal_device/utils/decode_Ascii_hex.dart';
+import 'package:datecs_fiscal_device/utils/decode_ascii_hex.dart';
 import 'package:datecs_fiscal_device/utils/extension.dart';
 import 'package:datecs_fiscal_device/utils/log_message.dart';
 import 'package:datecs_fiscal_device/utils/separators.dart';
