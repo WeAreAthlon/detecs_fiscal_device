@@ -6,24 +6,11 @@ on:
       - '[0-9]+.[0-9]+.[0-9]+*'
 
 jobs:
-  analyze:
-    name: Dry Run
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-
-      - uses: subosito/flutter-action@v2
-        with:
-          channel: stable
-
-      - name: Install dependencies
-        run: flutter pub get
-
-      - name: Verify package score
-        run: flutter pub publish --dry-run
-
   publish:
-    needs: analyze
+    name: Publish
     permissions:
       id-token: write # Required for authentication using OIDC
     uses: dart-lang/setup-dart/.github/workflows/publish.yml@v1
+    with:
+      # Specify the github actions deployment environment
+      environment: pub.dev
